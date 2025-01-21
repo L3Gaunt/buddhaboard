@@ -13,7 +13,8 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "test:e2e": "cypress run",
-    "test:e2e:dev": "cypress open"
+    "test:e2e:dev": "cypress open",
+    "test:db": "supabase db reset && psql -h localhost -p 54322 -U postgres -d postgres -f supabase/migrations/20240320000001_test_profiles.sql"
   },
   "dependencies": {
     "@supabase/ssr": "^0.5.2",
