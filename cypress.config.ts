@@ -12,7 +12,7 @@ export default defineConfig({
   },
   component: {
     devServer: {
-      framework: 'next',
+      framework: 'react',
       bundler: 'webpack',
     },
     specPattern: 'cypress/component/**/*.cy.{js,jsx,ts,tsx}',
